@@ -3,14 +3,14 @@
 Vollständiges, responsives Portfolio-Demoprojekt. Nicht veröffentlicht.
 
 ## Vorschau
-`docs/index.html` im Browser öffnen. Alternativ die eigenständige Datei `WERK-und-GRUEN-Vorschau.html` verwenden. Keine Installation erforderlich. Formularzustand bleibt nur im Arbeitsspeicher und geht beim Neuladen verloren.
+`dist/index.html` im Browser öffnen. Alternativ die eigenständige Datei `WERK-und-GRUEN-Vorschau.html` verwenden. Keine Installation erforderlich. Formularzustand bleibt nur im Arbeitsspeicher und geht beim Neuladen verloren.
 
 ## Aufbau
-- `docs/index.html`: Seiteninhalte und Platzhalter für Unternehmens-/Rechtstexte.
-- `docs/style.css`: responsive Gestaltung, Fokuszustände, reduzierte Bewegung.
-- `docs/config.js`: Name, Region, Kontaktwerte, Bilder und optionaler Formular-Endpunkt.
-- `docs/app.js`: Formularschritte, Validierung, lokale Foto-Vorschau, Summary und Versandadapter.
-- `docs/assets/`: lokal gespeicherte, komprimierte Bilder.
+- `dist/index.html`: Seiteninhalte und Platzhalter für Unternehmens-/Rechtstexte.
+- `dist/style.css`: responsive Gestaltung, Fokuszustände, reduzierte Bewegung.
+- `dist/config.js`: Name, Region, Kontaktwerte, Bilder und optionaler Formular-Endpunkt.
+- `dist/app.js`: Formularschritte, Validierung, lokale Foto-Vorschau, Summary und Versandadapter.
+- `dist/assets/`: lokal gespeicherte, komprimierte Bilder.
 
 ## Für einen realen Betrieb
 1. Firmenname, Rechtsform, Adresse, verantwortliche Person, Telefon und E-Mail ergänzen. `config.js` ändert Markenname und Kontaktdaten; Texte über Region/Leistungsumfang und Demo-Kennzeichnung in `index.html` redaktionell anpassen.
@@ -34,7 +34,3 @@ JavaScript-Syntax und strukturelle Prüfungen durchgeführt. Automatisierte DOM-
 
 ## Datenschutz der Demo
 Keine externen Schriftarten, Bilder, Karten oder Analyseaufrufe. Keine Formulardaten in Local Storage oder Cookies. Fotos werden lokal über Object URLs angezeigt und nicht übertragen. Hosting kann technische Zugriffsdaten verarbeiten.
-
-## GitHub Pages aktivieren
-
-Im Repository **Settings → Pages** öffnen. Unter **Build and deployment** die Quelle **Deploy from a branch** wählen, anschließend Branch **main** und Ordner **/docs** auswählen und speichern. Die Seite ist erst nach diesem Schritt veröffentlicht. Das Formular bleibt im Demo-Modus.
