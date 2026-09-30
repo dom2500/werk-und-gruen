@@ -1,9 +1,9 @@
-# Prüfung – 30.09.2026
+# Prüfung der UI-Überarbeitung – 30.09.2026
 
-Bestanden: JavaScript-Syntax; Navigation/Anker; Pflichtfeldfehler; mehrfache Leistungsauswahl und Vorauswahl; Zustand beim Vor-/Zurückwechsel; Postleitzahl-, E-Mail- und Telefonvalidierung; abhängige Kontaktwege; Zusammenfassung/Korrektur; unbekannte Fläche; Demo-Abschluss ohne Netzwerkanfrage; Öffnen/Schließen der Rechtstextdialoge; Foto-Dateityp, Signatur, Größe, Höchstzahl und Entfernen; Beschriftungszuordnungen; genau eine H1.
+JavaScript-Syntax und DOM-Funktionstests bestanden: Pflichtfelder, Mehrfachauswahl, Vorauswahl, Schrittwechsel mit erhaltenen Eingaben, PLZ/E-Mail/Telefon, Zusammenfassung/Korrektur, unbekannte Fläche, Demo-Abschluss ohne Übermittlung, Dialoge, Dateityp/Signatur/Größe/Höchstzahl/Entfernen, Anker und Beschriftungen.
 
-Die Tests wurden in einer simulierten DOM-Umgebung durchgeführt. Bilddekodierung und Dialogmethoden waren dort simuliert. WebMCP-Registrierung und gültige/ungültige Eingaben wurden am simulierten Registrierungsobjekt geprüft; eine Prüfung in einem Browser mit nativem WebMCP war nicht verfügbar.
+Browserprüfung bestanden: 320, 375, 768 und 1024 px breite Vorschau-Frames ohne horizontalen Überlauf; große Desktopansicht visuell geprüft. Im mobilen Frame vollständig durchlaufen: Leistungsvorauswahl, Fehlerübersicht, Häufigkeit/Objektart, Standort/Beschreibung, unbekannte Fläche per Tastatur, tatsächliche WebP-Dateiauswahl und Bildvorschau, Kontaktdaten, Zusammenfassung und eindeutig gekennzeichneter Demo-Abschluss. Die Frame-Breiten entsprechen CSS-Viewports einschließlich Browser-Scrollleisten; kein Test auf physischer Smartphone-Hardware.
 
-Responsive Regeln für Smartphone, Tablet und Desktop implementiert und strukturell geprüft. Ein visueller Browserlauf war nicht verfügbar, weil der vom Sites-Skill vorgeschriebene Browser-Prüfpfad in dieser Sitzung fehlt. Nicht visuell bestätigt: Pixel-Layout, Überlappungen, Scrollbreite, 200-%-Zoom, native Dateidialoge, native Fokusfalle. Diese Punkte sind vor Veröffentlichung manuell in aktuellen Browsern zu prüfen.
+Bilder lokal, keine externen Schriftarten oder Karten. Reduzierte Bewegung berücksichtigt. Der neue Entwurf bleibt im separaten Branch und wird nicht automatisch veröffentlicht.
 
-Keine Veröffentlichung erfolgt. Keine echten Daten oder Nachrichten versendet.
+Nicht geprüft: echte Backend-Zustellung, reale Unternehmens-/Rechtsangaben und native WebMCP-Unterstützung. Kein Backend eingerichtet, daher keine Anfrageübermittlung.
