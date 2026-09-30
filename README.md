@@ -1,16 +1,16 @@
 # WERK & GRÜN – Hausmeisterservice
 
-Vollständiges, responsives Portfolio-Demoprojekt. Nicht veröffentlicht.
+Vollständiges, responsives Portfolio-Demoprojekt. Formular im Demo-Modus.
 
 ## Vorschau
-`dist/index.html` im Browser öffnen. Alternativ die eigenständige Datei `WERK-und-GRUEN-Vorschau.html` verwenden. Keine Installation erforderlich. Formularzustand bleibt nur im Arbeitsspeicher und geht beim Neuladen verloren.
+`index.html` im Browser öffnen. Alternativ die eigenständige Datei `WERK-und-GRUEN-Vorschau.html` verwenden. Keine Installation erforderlich. Formularzustand bleibt nur im Arbeitsspeicher und geht beim Neuladen verloren.
 
 ## Aufbau
-- `dist/index.html`: Seiteninhalte und Platzhalter für Unternehmens-/Rechtstexte.
-- `dist/style.css`: responsive Gestaltung, Fokuszustände, reduzierte Bewegung.
-- `dist/config.js`: Name, Region, Kontaktwerte, Bilder und optionaler Formular-Endpunkt.
-- `dist/app.js`: Formularschritte, Validierung, lokale Foto-Vorschau, Summary und Versandadapter.
-- `dist/assets/`: lokal gespeicherte, komprimierte Bilder.
+- `index.html`: Seiteninhalte und Platzhalter für Unternehmens-/Rechtstexte.
+- `style.css`: responsive Gestaltung, Fokuszustände, reduzierte Bewegung.
+- `config.js`: Name, Region, Kontaktwerte, Bilder und optionaler Formular-Endpunkt.
+- `app.js`: Formularschritte, Validierung, lokale Foto-Vorschau, Summary und Versandadapter.
+- `assets/`: lokal gespeicherte, komprimierte Bilder.
 
 ## Für einen realen Betrieb
 1. Firmenname, Rechtsform, Adresse, verantwortliche Person, Telefon und E-Mail ergänzen. `config.js` ändert Markenname und Kontaktdaten; Texte über Region/Leistungsumfang und Demo-Kennzeichnung in `index.html` redaktionell anpassen.
@@ -30,7 +30,12 @@ Erwartete Bestätigung: JSON `{ "status": "accepted", "id": "<serverseitige Vorg
 Server-Pflichten: Alle Felder unabhängig validieren; maximal fünf Dateien und 10 MiB pro Datei sowie Gesamtkörper-Limit durchsetzen; MIME-Typ, Dateisignatur und dekodierbaren Bildinhalt prüfen; Pixel-/Ressourcenlimits; sichere zufällige Dateinamen; private Speicherung außerhalb öffentlicher Webpfade; Metadaten entfernen; Rate-Limits/Spam-Schutz; Origin/CSRF-Schutz passend zum Deployment; Ausgabe escapen; Uploads nicht ausführbar machen; definierte Löschfristen; minimale Logs ohne Formulardaten; Zustellfehler behandeln. Niemals rein clientseitiger Validierung vertrauen.
 
 ## Qualitätsprüfung
-JavaScript-Syntax und strukturelle Prüfungen durchgeführt. Automatisierte DOM-Prüfungen werden im beigefügten Prüfbericht dokumentiert. Visuelle Browserprüfungen von Smartphone, Tablet und Desktop sind in dieser Sitzung mangels freigegebenem Browser-Prüfpfad nicht durchführbar; daher keine Behauptung einer vollständigen visuellen Abnahme. Vor Veröffentlichung bei 375, 768, 1024 und 1440 px sowie 200 % Zoom prüfen, einschließlich Tastatur, Dateiauswahl und Dialogfokus.
+JavaScript-Syntax und strukturelle Prüfungen durchgeführt. Automatisierte DOM-Prüfungen werden im beigefügten Prüfbericht dokumentiert. Die überarbeitete Gestaltung wurde im Browser bei schmalen, mobilen, Tablet- und Desktop-Breiten geprüft. Der vollständige Demo-Formularablauf inklusive Fotoauswahl wurde im Browser durchlaufen. Vor Veröffentlichung bei 375, 768, 1024 und 1440 px sowie 200 % Zoom prüfen, einschließlich Tastatur, Dateiauswahl und Dialogfokus.
 
 ## Datenschutz der Demo
 Keine externen Schriftarten, Bilder, Karten oder Analyseaufrufe. Keine Formulardaten in Local Storage oder Cookies. Fotos werden lokal über Object URLs angezeigt und nicht übertragen. Hosting kann technische Zugriffsdaten verarbeiten.
+
+
+## GitHub Pages
+
+Die öffentlichen Dateien liegen direkt im Hauptordner. Verwenden Sie für Pages Branch `main` und Ordner `/(root)`. Änderungen im Entwurfsbranch `design/werk-gruen-interface` werden erst nach Freigabe und Zusammenführung nach `main` veröffentlicht.
